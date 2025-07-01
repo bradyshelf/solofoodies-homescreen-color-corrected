@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Utensils } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -53,7 +54,6 @@ const HomepageEnhanced = () => {
       <PricingSection selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} />
       <FAQSection openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <CallToActionSection />
-      <StatsSection collabCount={collabCount} />
       <FooterSection collabCount={collabCount} />
       
       <VersionSwitcher />
