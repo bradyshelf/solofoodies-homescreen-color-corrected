@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Utensils } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -38,8 +37,6 @@ const HomepageEnhanced = () => {
             <span className="text-xl font-bold text-[#1D252C]">SoloFoodies</span>
           </div>
           <nav className="flex items-center gap-6">
-            <a href="#features" className="hidden md:block text-gray-600 hover:text-[#FF4438] transition-colors">Características</a>
-            <a href="#faq" className="hidden md:block text-gray-600 hover:text-[#FF4438] transition-colors">FAQ</a>
             <Button variant="outline" className="border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10">
               Iniciar Sesión
             </Button>
