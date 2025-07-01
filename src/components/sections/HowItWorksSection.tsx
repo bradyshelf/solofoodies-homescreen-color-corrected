@@ -15,7 +15,7 @@ const HowItWorksSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">¿Cómo funciona Solofoodies?</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Three simple steps to start building meaningful collaborations</p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Una plataforma diseñada para facilitar colaboraciones auténticas entre restaurantes y creadores de contenido.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {howItWorksSteps.map((step, index) => {
