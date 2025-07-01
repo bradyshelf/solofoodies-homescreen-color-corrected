@@ -37,14 +37,17 @@ const HomepageEnhanced = () => {
             </div>
             <span className="text-xl font-bold text-[#1D252C]">SoloFoodies</span>
           </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#how-it-works" className="text-gray-600 hover:text-[#FF4438] transition-colors">How It Works</a>
-            <a href="#features" className="text-gray-600 hover:text-[#FF4438] transition-colors">Features</a>
-            <a href="#faq" className="text-gray-600 hover:text-[#FF4438] transition-colors">FAQ</a>
+          
+          <div className="flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-6">
+              <a href="#how-it-works" className="text-gray-600 hover:text-[#FF4438] transition-colors">How It Works</a>
+              <a href="#features" className="text-gray-600 hover:text-[#FF4438] transition-colors">Features</a>
+              <a href="#faq" className="text-gray-600 hover:text-[#FF4438] transition-colors">FAQ</a>
+            </nav>
             <Button variant="outline" className="border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10">
               Sign In
             </Button>
-          </nav>
+          </div>
         </div>
       </header>
 
