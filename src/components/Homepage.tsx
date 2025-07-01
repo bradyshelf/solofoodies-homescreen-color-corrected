@@ -1,29 +1,38 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award } from 'lucide-react';
+
 const Homepage = () => {
-  const testimonials = [{
-    quote: "SoloFoodies helped us connect with amazing local creators. Our engagement doubled!",
-    name: "Maria Santos",
-    role: "Restaurant Manager",
-    avatar: "MS"
-  }, {
-    quote: "Finally, a platform that makes collaboration simple and rewarding for creators.",
-    name: "@foodie_explorer",
-    role: "Food Influencer",
-    avatar: "FE"
-  }, {
-    quote: "The partnerships we've built through SoloFoodies have been game-changing.",
-    name: "Chef David Kim",
-    role: "Restaurant Owner",
-    avatar: "DK"
-  }, {
-    quote: "Love how easy it is to find authentic restaurants that value content creators.",
-    name: "@tastebud_travels",
-    role: "Content Creator",
-    avatar: "TT"
-  }];
-  return <div className="min-h-screen bg-white">
+  const testimonials = [
+    {
+      quote: "SoloFoodies helped us connect with amazing local creators. Our engagement doubled!",
+      name: "Maria Santos",
+      role: "Restaurant Manager",
+      avatar: "MS"
+    },
+    {
+      quote: "Finally, a platform that makes collaboration simple and rewarding for creators.",
+      name: "@foodie_explorer",
+      role: "Food Influencer",
+      avatar: "FE"
+    },
+    {
+      quote: "The partnerships we've built through SoloFoodies have been game-changing.",
+      name: "Chef David Kim",
+      role: "Restaurant Owner",
+      avatar: "DK"
+    },
+    {
+      quote: "Love how easy it is to find authentic restaurants that value content creators.",
+      name: "@tastebud_travels",
+      role: "Content Creator",
+      avatar: "TT"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="px-4 py-6 md:px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -124,7 +133,8 @@ const Homepage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {testimonials.map((testimonial, index) => <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-[#FF6F61] rounded-full flex items-center justify-center text-white font-bold text-sm">
@@ -137,7 +147,8 @@ const Homepage = () => {
                   </div>
                   <p className="text-gray-700 italic">"{testimonial.quote}"</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -280,7 +291,7 @@ const Homepage = () => {
             <Button className="bg-white text-[#FF6F61] hover:bg-gray-50 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
               Join as a Foodie
             </Button>
-            <Button variant="outline" className="border-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold text-[#de6666] bg-slate-50">
+            <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
               Partner as a Restaurant
             </Button>
           </div>
@@ -310,6 +321,8 @@ const Homepage = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Homepage;
