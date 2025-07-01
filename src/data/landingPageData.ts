@@ -122,17 +122,17 @@ export const restaurantFeatures = [
 export const missionValues = [
   {
     icon: "Award",
-    title: "Calidad Primero",
+    title: "Calidad ante todo",
     description: "Alianzas curadas que crean valor real"
   },
   {
     icon: "MessageSquare",
-    title: "Impulsado por la Comunidad",
+    title: "Impulsado por la comunidad",
     description: "Construido por y para la comunidad gastronómica"
   },
   {
     icon: "Heart",
-    title: "Conexiones Auténticas",
+    title: "Conexiones auténticas",
     description: "Relaciones reales, no solo transacciones"
   }
 ];
