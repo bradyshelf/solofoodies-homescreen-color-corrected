@@ -1,4 +1,5 @@
 
+
 import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
 
@@ -19,7 +20,7 @@ const HeroSection = ({ collabCount }: HeroSectionProps) => {
             Creadores de contenido para tu restaurante
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            SoloFoodies facilita los acuerdos de marca conectando influencers gastronómicos con restaurantes — todo en una plataforma simple.
+            Solofoodies te conecta con creadores locales e internacionales listos para colaborar y generar contenido. Comienza seleccionando tu tipo de perfil.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-[#FF4438] hover:bg-[#FF4438]/90 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
@@ -36,3 +37,4 @@ const HeroSection = ({ collabCount }: HeroSectionProps) => {
 };
 
 export default HeroSection;
+
