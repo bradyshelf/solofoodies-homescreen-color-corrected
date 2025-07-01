@@ -19,10 +19,10 @@ const StatsSection = ({ collabCount }: StatsSectionProps) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="w-12 h-12 bg-[#FF6F61]/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <stat.icon className="w-6 h-6 text-[#FF6F61]" />
+              <div className="w-12 h-12 bg-[#FF4438]/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <stat.icon className="w-6 h-6 text-[#FF4438]" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
+              <div className="text-3xl font-bold text-[#1D252C] mb-1">{stat.number}</div>
               <div className="text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
