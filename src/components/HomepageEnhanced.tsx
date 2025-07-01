@@ -59,7 +59,6 @@ const HomepageEnhanced = () => {
       <FAQSection openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <TrustSafetySection />
       <CallToActionSection />
-      <StatsSection collabCount={collabCount} />
       <FooterSection collabCount={collabCount} />
       
       <VersionSwitcher />
