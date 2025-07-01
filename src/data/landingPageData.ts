@@ -1,4 +1,3 @@
-
 export const testimonials = [
   {
     quote: "SoloFoodies nos ayudó a conectar con creadores locales increíbles. ¡Nuestro engagement se duplicó!",
@@ -56,18 +55,18 @@ export const faqs = [
 export const howItWorksSteps = [
   {
     icon: "Search",
-    title: "Construye Tu Perfil",
-    description: "Crea un perfil atractivo que muestre tu restaurante o estilo de creación de contenido"
+    title: "Crea tu perfil",
+    description: "Diseña un perfil atractivo que represente tu restaurante o estilo como creador."
   },
   {
     icon: "Heart",
-    title: "Descubre Colaboraciones Perfectas",
-    description: "Encuentra socios ideales a través de nuestro sistema de emparejamiento inteligente y explora oportunidades"
+    title: "Descubre colaboraciones",
+    description: "Encuentra socios ideales con nuestro directorio de influencers gastronómicos."
   },
   {
     icon: "TrendingUp",
-    title: "Alcanza Más Clientes",
-    description: "Haz crecer tu audiencia y negocio a través de colaboraciones auténticas y atractivas"
+    title: "Llega a más clientes",
+    description: "Haz crecer tu audiencia y tu marca con colaboraciones auténticas y efectivas."
   }
 ];
 
