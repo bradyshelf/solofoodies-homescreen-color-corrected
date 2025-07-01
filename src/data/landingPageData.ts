@@ -123,16 +123,16 @@ export const missionValues = [
   {
     icon: "Award",
     title: "Calidad ante todo",
-    description: "Alianzas curadas que crean valor real"
+    description: "Colaboraciones curadas que aportan valor real a ambas partes."
   },
   {
     icon: "MessageSquare",
     title: "Impulsado por la comunidad",
-    description: "Construido por y para la comunidad gastronómica"
+    description: "Creado por y para quienes viven la cultura gastronómica."
   },
   {
     icon: "Heart",
     title: "Conexiones auténticas",
-    description: "Relaciones reales, no solo transacciones"
+    description: "Relaciones reales que van más allá de una simple publicación."
   }
 ];
