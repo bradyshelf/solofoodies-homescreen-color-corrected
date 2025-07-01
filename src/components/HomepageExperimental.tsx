@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Plus, Minus } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import VersionSwitcher from './VersionSwitcher';
 import { testimonials, faqs, howItWorksSteps, trustFeatures, foodieFeatures, restaurantFeatures, missionValues } from '@/data/landingPageData';
 
 const HomepageExperimental = () => {
@@ -29,6 +30,8 @@ const HomepageExperimental = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
+      <VersionSwitcher />
+      
       {/* Animated Background */}
       <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-black to-orange-900/20"></div>
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,111,97,0.1),transparent_50%)]"></div>

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import HeroSection from './sections/HeroSection';
 import StatsSection from './sections/StatsSection';
 import FAQSection from './sections/FAQSection';
+import VersionSwitcher from './VersionSwitcher';
 import { testimonials, howItWorksSteps, trustFeatures, foodieFeatures, restaurantFeatures, missionValues } from '@/data/landingPageData';
 
 const HomepageEnhanced = () => {
@@ -25,6 +26,8 @@ const HomepageEnhanced = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <VersionSwitcher />
+      
       {/* Header */}
       <header className="px-4 py-6 md:px-6 lg:px-8 border-b border-gray-100">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
