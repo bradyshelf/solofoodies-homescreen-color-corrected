@@ -1,4 +1,5 @@
 
+
 import { CheckCircle, Camera, Utensils, Building2 } from 'lucide-react';
 
 const FeaturesSection = () => {
@@ -51,7 +52,7 @@ const FeaturesSection = () => {
     <section id="features" className="px-4 py-20 md:px-6 lg:px-8 bg-[#F9F9F9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">Hecho Para Todos</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">¿Para quién es Solofoodies?</h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -61,7 +62,7 @@ const FeaturesSection = () => {
               <div className="w-16 h-16 bg-[#FDBD50]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <Camera className="w-8 h-8 text-[#FDBD50]" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Para Creadores de Contenido</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Creadores</h3>
             </div>
             <div className="space-y-4">
               {foodieFeatures.map((feature, index) => (
@@ -81,7 +82,7 @@ const FeaturesSection = () => {
               <div className="w-16 h-16 bg-[#FF4438]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <Utensils className="w-8 h-8 text-[#FF4438]" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Para Restaurantes</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Restaurantes</h3>
             </div>
             <div className="space-y-4">
               {restaurantFeatures.map((feature, index) => (
@@ -101,7 +102,7 @@ const FeaturesSection = () => {
               <div className="w-16 h-16 bg-[#10B981]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <Building2 className="w-8 h-8 text-[#10B981]" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Para Agencias de Restaurantes</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#1D252C] mb-4">Agencias de Marketing</h3>
             </div>
             <div className="space-y-4">
               {agencyFeatures.map((feature, index) => (
@@ -121,3 +122,4 @@ const FeaturesSection = () => {
 };
 
 export default FeaturesSection;
+
