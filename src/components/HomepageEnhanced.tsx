@@ -10,7 +10,6 @@ import TestimonialsSection from './sections/TestimonialsSection';
 import FeaturesSection from './sections/FeaturesSection';
 import PricingSection from './sections/PricingSection';
 import FAQSection from './sections/FAQSection';
-import TrustSafetySection from './sections/TrustSafetySection';
 import CallToActionSection from './sections/CallToActionSection';
 import FooterSection from './sections/FooterSection';
 import VersionSwitcher from './VersionSwitcher';
@@ -57,7 +56,6 @@ const HomepageEnhanced = () => {
       <FeaturesSection />
       <PricingSection selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} />
       <FAQSection openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <TrustSafetySection />
       <CallToActionSection />
       <FooterSection collabCount={collabCount} />
       
