@@ -4,36 +4,25 @@ import { trustFeatures } from '@/data/landingPageData';
 
 const TrustSafetySection = () => {
   const iconMap = {
-    Search,
-    Heart,
-    TrendingUp,
-    Shield,
-    Clock,
-    Award,
-    MessageSquare
+    Search, Heart, TrendingUp, Shield, Clock, Award, MessageSquare
   };
 
   return (
-    <section className="px-4 py-16 md:px-6 lg:px-8 bg-gray-50">
+    <section className="px-4 py-20 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#1D252C] mb-4">Trust & Safety</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Your security and success are our top priorities. We've built comprehensive systems to ensure every collaboration is safe and successful.
-          </p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">Safe & Secure Platform</h2>
+          <p className="text-xl text-gray-600">Your safety and success are our top priorities</p>
         </div>
-        
         <div className="grid md:grid-cols-3 gap-8">
           {trustFeatures.map((feature, index) => {
             const IconComponent = iconMap[feature.icon as keyof typeof iconMap];
             return (
               <div key={index} className="text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-[#FF4438] rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
+                <div className="w-16 h-16 bg-[#FF4438]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <IconComponent className="w-8 h-8 text-[#FF4438]" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1D252C] mb-3">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-[#1D252C] mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             );
