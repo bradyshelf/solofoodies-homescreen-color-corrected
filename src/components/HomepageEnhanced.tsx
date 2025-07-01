@@ -1,6 +1,7 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro } from 'lucide-react';
+import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro, Building2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import HeroSection from './sections/HeroSection';
 import StatsSection from './sections/StatsSection';
@@ -23,6 +24,29 @@ const HomepageEnhanced = () => {
   const iconMap = {
     Search, Heart, TrendingUp, Shield, Clock, Award, MessageSquare
   };
+
+  const agencyFeatures = [
+    {
+      title: "Multi-Restaurant Management",
+      description: "Manage collaborations across your entire restaurant portfolio from one dashboard"
+    },
+    {
+      title: "Bulk Campaign Creation", 
+      description: "Create and deploy campaigns across multiple locations simultaneously"
+    },
+    {
+      title: "Advanced Analytics",
+      description: "Track performance metrics and ROI across all your restaurant clients"
+    },
+    {
+      title: "White-Label Solutions",
+      description: "Customize the platform with your agency branding for client presentations"
+    },
+    {
+      title: "Team Collaboration",
+      description: "Add team members with different permission levels for seamless workflow"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-white relative">
@@ -81,7 +105,7 @@ const HomepageEnhanced = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Built for Everyone</h2>
           </div>
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12">
             <div className="space-y-6">
               <div className="text-center lg:text-left">
                 <div className="w-12 h-12 bg-[#FDBD50]/10 rounded-lg flex items-center justify-center mb-4 mx-auto lg:mx-0">
@@ -115,6 +139,27 @@ const HomepageEnhanced = () => {
                 {restaurantFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#FF6F61] flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">{feature.title}</h4>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="text-center lg:text-left">
+                <div className="w-12 h-12 bg-[#10B981]/10 rounded-lg flex items-center justify-center mb-4 mx-auto lg:mx-0">
+                  <Building2 className="w-6 h-6 text-[#10B981]" />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">For Restaurant Agencies</h3>
+                <p className="text-gray-600 mb-6">Scale influencer marketing across your entire restaurant portfolio</p>
+              </div>
+              <div className="space-y-4">
+                {agencyFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[#10B981] flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900">{feature.title}</h4>
                       <p className="text-gray-600">{feature.description}</p>
