@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro, Building2 } from 'lucide-react';
@@ -104,63 +105,71 @@ const HomepageEnhanced = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Built for Everyone</h2>
           </div>
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="space-y-6">
-              <div className="text-center lg:text-left">
-                <div className="w-12 h-12 bg-[#FDBD50]/10 rounded-lg flex items-center justify-center mb-4 mx-auto lg:mx-0">
-                  <Camera className="w-6 h-6 text-[#FDBD50]" />
+          
+          {/* Food Creators Section */}
+          <div className="mb-20">
+            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+              <div className="text-center mb-8">
+                <div className="w-16 h-16 bg-[#FDBD50]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <Camera className="w-8 h-8 text-[#FDBD50]" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">For Food Creators</h3>
-                <p className="text-gray-600 mb-6">Turn your passion into partnerships with amazing restaurants</p>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">For Food Creators</h3>
+                <p className="text-gray-600 text-lg max-w-2xl mx-auto">Turn your passion into partnerships with amazing restaurants</p>
               </div>
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {foodieFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#FDBD50] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-900">{feature.title}</h4>
+                      <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
                       <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+          </div>
 
-            <div className="space-y-6">
-              <div className="text-center lg:text-left">
-                <div className="w-12 h-12 bg-[#FF6F61]/10 rounded-lg flex items-center justify-center mb-4 mx-auto lg:mx-0">
-                  <Utensils className="w-6 h-6 text-[#FF6F61]" />
+          {/* Restaurants Section */}
+          <div className="mb-20">
+            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+              <div className="text-center mb-8">
+                <div className="w-16 h-16 bg-[#FF6F61]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <Utensils className="w-8 h-8 text-[#FF6F61]" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">For Restaurants</h3>
-                <p className="text-gray-600 mb-6">Amplify your brand with authentic food influencer partnerships</p>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">For Restaurants</h3>
+                <p className="text-gray-600 text-lg max-w-2xl mx-auto">Amplify your brand with authentic food influencer partnerships</p>
               </div>
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {restaurantFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#FF6F61] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-900">{feature.title}</h4>
+                      <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
                       <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+          </div>
 
-            <div className="space-y-6">
-              <div className="text-center lg:text-left">
-                <div className="w-12 h-12 bg-[#10B981]/10 rounded-lg flex items-center justify-center mb-4 mx-auto lg:mx-0">
-                  <Building2 className="w-6 h-6 text-[#10B981]" />
+          {/* Restaurant Agencies Section */}
+          <div>
+            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+              <div className="text-center mb-8">
+                <div className="w-16 h-16 bg-[#10B981]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <Building2 className="w-8 h-8 text-[#10B981]" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">For Restaurant Agencies</h3>
-                <p className="text-gray-600 mb-6">Scale influencer marketing across your entire restaurant portfolio</p>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">For Restaurant Agencies</h3>
+                <p className="text-gray-600 text-lg max-w-2xl mx-auto">Scale influencer marketing across your entire restaurant portfolio</p>
               </div>
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {agencyFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#10B981] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-900">{feature.title}</h4>
+                      <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
                       <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
