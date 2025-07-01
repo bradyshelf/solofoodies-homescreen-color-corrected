@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro, Building2 } from 'lucide-react';
@@ -25,26 +24,60 @@ const HomepageEnhanced = () => {
     Search, Heart, TrendingUp, Shield, Clock, Award, MessageSquare
   };
 
+  const foodieFeatures = [
+    {
+      title: "Explora colaboraciones según tu ubicación actual",
+      description: "Encuentra oportunidades cerca de ti"
+    },
+    {
+      title: "Añade viajes próximos con ubicación y fechas", 
+      description: "Planifica colaboraciones durante tus viajes"
+    },
+    {
+      title: "Aplica a colaboraciones antes de llegar a nuevas ciudades",
+      description: "Asegura tu agenda antes de viajar"
+    },
+    {
+      title: "Rastrea el estado de tus colaboraciones y chatea con restaurantes",
+      description: "Mantén control total de tus partnerships"
+    }
+  ];
+
+  const restaurantFeatures = [
+    {
+      title: "Crea colaboraciones públicas en menos de 1 minuto",
+      description: "Proceso rápido y sencillo"
+    },
+    {
+      title: "Recibe solicitudes de creadores locales e internacionales",
+      description: "Accede a una amplia red de influencers"
+    },
+    {
+      title: "Habla directo con creadores y define expectativas desde el chat integrado",
+      description: "Comunicación clara y directa"
+    },
+    {
+      title: "Valora a los creadores al finalizar la colaboración",
+      description: "Construye una red de confianza"
+    }
+  ];
+
   const agencyFeatures = [
     {
-      title: "Multi-Restaurant Management",
-      description: "Manage collaborations across your entire restaurant portfolio from one dashboard"
+      title: "Gestiona múltiples restaurantes desde un solo perfil",
+      description: "Centraliza todas tus operaciones"
     },
     {
-      title: "Bulk Campaign Creation", 
-      description: "Create and deploy campaigns across multiple locations simultaneously"
+      title: "Maneja restaurantes con múltiples ubicaciones",
+      description: "Escala tus campañas fácilmente"
     },
     {
-      title: "Advanced Analytics",
-      description: "Track performance metrics and ROI across all your restaurant clients"
+      title: "Dashboard centralizado para todas las colaboraciones",
+      description: "Control total desde una sola vista"
     },
     {
-      title: "White-Label Solutions",
-      description: "Customize the platform with your agency branding for client presentations"
-    },
-    {
-      title: "Team Collaboration",
-      description: "Add team members with different permission levels for seamless workflow"
+      title: "Analíticas consolidadas por cliente",
+      description: "Reportes detallados para cada restaurante"
     }
   ];
 
