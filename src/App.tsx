@@ -17,7 +17,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<EnhancedIndex />} />
           <Route path="/enhanced" element={<EnhancedIndex />} />
           <Route path="/experimental" element={<ExperimentalIndex />} />
           <Route path="/experimental-v2" element={<ExperimentalV2Index />} />
