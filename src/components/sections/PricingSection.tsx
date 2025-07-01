@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Euro } from 'lucide-react';
@@ -83,7 +84,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                     }
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     {selectedPlan === 'monthly' 
                       ? '+€29/mes por cada restaurante adicional'
                       : '+€232 por cada restaurante adicional'
@@ -132,7 +133,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                     Primer restaurante incluido
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     +€29/mes por cada restaurante adicional
                   </p>
                 </div>
@@ -170,7 +171,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                     Primer restaurante incluido
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     +€232 por cada restaurante adicional
                   </p>
                 </div>
