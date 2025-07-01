@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EnhancedIndex from "./pages/EnhancedIndex";
 import ExperimentalIndex from "./pages/ExperimentalIndex";
+import ExperimentalV2Index from "./pages/ExperimentalV2Index";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<EnhancedIndex />} />
           <Route path="/enhanced" element={<EnhancedIndex />} />
           <Route path="/experimental" element={<ExperimentalIndex />} />
+          <Route path="/experimental-v2" element={<ExperimentalV2Index />} />
           <Route path="*" element={<EnhancedIndex />} />
         </Routes>
       </BrowserRouter>
