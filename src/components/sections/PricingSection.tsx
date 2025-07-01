@@ -100,7 +100,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
-                Comenzar Plan
+                Comenzar
               </Button>
             </CardContent>
           </Card>
@@ -146,7 +146,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
-                Comenzar Plan Mensual
+                Comenzar
               </Button>
             </CardContent>
           </Card>
@@ -184,7 +184,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <Button variant="outline" className="w-full border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10 font-semibold py-3">
-                Pago Único
+                Comenzar
               </Button>
             </CardContent>
           </Card>
