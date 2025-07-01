@@ -10,7 +10,7 @@ const CallToActionSection = () => {
           Únete a miles de restaurantes y creadores gastronómicos que ya están formando alianzas increíbles.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-white text-[#FF4438] hover:bg-gray-50 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
+          <Button className="bg-white text-[#FF4438] hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
             QUIERO COLABORAR COMO FOODIE
           </Button>
           <Button variant="outline" className="border-white text-[#FF4438] bg-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
