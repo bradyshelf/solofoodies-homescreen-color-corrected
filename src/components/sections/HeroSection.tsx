@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
 
@@ -13,7 +12,7 @@ const HeroSection = ({ collabCount }: HeroSectionProps) => {
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-[#FDBD50]/10 px-4 py-2 rounded-full text-[#FF4438] font-medium mb-6">
             <Zap className="w-4 h-4" />
-            <span>Más de {collabCount.toLocaleString()} colaboraciones exitosas</span>
+            <span>{collabCount.toLocaleString()} colaboraciones exitosas</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-[#1D252C] mb-6 leading-tight">
             Donde los Restaurantes y
