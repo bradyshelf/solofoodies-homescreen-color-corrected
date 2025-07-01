@@ -31,7 +31,7 @@ const VersionSwitcher = () => {
     if (isExperimentalV2) {
       return 'border-gray-300 text-gray-700 hover:bg-gray-50';
     } else if (isExperimental) {
-      return 'border-white text-white hover:bg-white/10';
+      return 'border-[#FF6F61] bg-[#FF6F61]/10 text-[#FF6F61] hover:bg-[#FF6F61]/20';
     } else {
       return 'border-[#FF6F61] text-[#FF6F61] hover:bg-[#FF6F61]/10';
     }
