@@ -27,28 +27,48 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "¿Cómo funciona SoloFoodies?",
-    answer: "SoloFoodies conecta restaurantes con influencers gastronómicos a través de nuestra plataforma. Los restaurantes crean oportunidades de colaboración, y los foodies pueden explorar y aplicar para alianzas que coincidan con su estilo y audiencia."
+    question: "¿Cuál es la permanencia del servicio?",
+    answer: "En Solofoodies no hay permanencia. Puedes contratar el plan mensual por 29 €/mes por restaurante y cancelarlo cuando quieras. También tienes la opción del plan único, con un solo pago de 232 € de por vida, sin suscripciones ni renovaciones."
   },
   {
-    question: "¿Es gratis usar SoloFoodies?",
-    answer: "Para los creadores de contenido gastronómico, SoloFoodies es completamente gratuito. Los restaurantes tienen acceso a funciones básicas gratuitas, con opciones de suscripción premium para mayor visibilidad y herramientas avanzadas de colaboración."
+    question: "¿Qué incluye el servicio de Solofoodies para restaurantes?",
+    answer: "Incluye todo lo que necesitas para colaborar con influencers gastronómicos: publicación de colaboraciones, recepción de solicitudes, chat integrado, sistema de valoraciones, integración con CoverManager y otros integradores de reservas y soporte continuo. Es una plataforma todo en uno para restaurantes que buscan crecer en redes sociales."
   },
   {
-    question: "¿Qué tipos de colaboraciones están disponibles?",
-    answer: "Las colaboraciones van desde comidas gratuitas para creación de contenido, publicaciones patrocinadas, alianzas para eventos, degustaciones de menú, promociones de gran apertura, y roles de embajador de marca a largo plazo."
+    question: "¿Puedo elegir a los creadores con los que colaboro?",
+    answer: "Sí. Cada restaurante puede ver los perfiles de los foodies interesados, revisar su contenido, sus estadísticas y decidir con quién colaborar. Solo colaboras si tú aceptas la solicitud."
   },
   {
-    question: "¿Cómo sé si una colaboración es legítima?",
-    answer: "Todos los restaurantes en nuestra plataforma son verificados a través de nuestro proceso de revisión. También proporcionamos acuerdos de colaboración y resolución de disputas para asegurar que ambas partes estén protegidas."
+    question: "¿Qué tipo de influencers/creadores puedo encontrar en Solofoodies?",
+    answer: "Contamos con una comunidad de foodies, creadores gastronómicos y microinfluencers, tanto locales como internacionales. Puedes recibir solicitudes de personas que viven en tu ciudad o que la visitarán próximamente."
   },
   {
-    question: "¿Puedo negociar los términos de colaboración?",
-    answer: "¡Por supuesto! Nuestra plataforma incluye herramientas de mensajería que permiten a restaurantes y creadores discutir y personalizar detalles de colaboración para que funcionen para ambas partes."
+    question: "¿Cómo gestiono las reservas de las colaboraciones?",
+    answer: "Si tu restaurante usa CoverManager, las reservas de los creadores gastronómicos se sincronizan automáticamente en tu sistema. Además, los detalles de cada colaboración (número de personas, tipo de contenido, requerimientos especiales) se registran para que tanto el equipo de marketing como el equipo de sala estén perfectamente coordinados.\nSi no utilizas CoverManager, puedes gestionar las reservas directamente dentro de Solofoodies. Una vez aceptada la colaboración, verás todos los detalles necesarios y podrás comunicar al equipo de sala manualmente para garantizar que la experiencia sea fluida y profesional.\nCon Solofoodies, aseguras que todas tus colaboraciones con influencers estén organizadas, sin malentendidos ni pérdida de información."
   },
   {
-    question: "¿Qué tan rápido puedo empezar a colaborar?",
-    answer: "Una vez que tu perfil esté completo, puedes comenzar a explorar y aplicar para colaboraciones inmediatamente. La mayoría de las solicitudes de colaboración reciben respuestas dentro de 24-48 horas."
+    question: "¿Puedo usar Solofoodies si tengo varios restaurantes o diferentes marcas?",
+    answer: "Sí. Si tienes varias ubicaciones del mismo restaurante, puedes gestionarlas todas desde un solo perfil por 29 €/mes. Es ideal para franquicias, cadenas o grupos con una marca común, ya que puedes publicar colaboraciones y centralizar la gestión.\nSi manejas restaurantes con marcas distintas, cada una requiere su propia suscripción. Por ejemplo, si gestionas tres marcas diferentes, pagarás 29 € por cada una, es decir, 87 €/mes. Puedes activar o desactivar marcas según tus necesidades, manteniendo control total sobre las colaboraciones gastronómicas activas."
+  },
+  {
+    question: "¿Puedo colaborar con influencers de otros países?",
+    answer: "¡Claro! Solofoodies está pensado para facilitar colaboraciones gastronómicas internacionales. Los creadores pueden indicar sus viajes futuros y tú puedes aceptar solicitudes de quienes planean visitar tu ciudad."
+  },
+  {
+    question: "¿Cómo me ayuda Solofoodies a conseguir más visibilidad?",
+    answer: "Las colaboraciones con creadores generan contenido auténtico para redes sociales y permiten que tu restaurante aparezca en cuentas relevantes, tanto en Instagram como TikTok. Esto se traduce en mayor visibilidad y potencial de nuevas reservas."
+  },
+  {
+    question: "¿Qué pasa después de una colaboración con un influencer?",
+    answer: "Una vez finalizada la colaboración, tanto el restaurante como el creador pueden dejar una valoración mutua. Este sistema permite construir una comunidad de confianza dentro de Solofoodies.\nLos restaurantes pueden valorar a los creadores según su profesionalismo, cumplimiento y calidad del contenido. Así, otros negocios pueden identificar fácilmente qué perfiles generan mejor impacto y colaboran de forma más profesional.\nDe esta manera, Solofoodies se convierte en una herramienta no solo para conectar, sino también para elegir mejor con quién colaborar."
+  },
+  {
+    question: "¿Qué diferencia a Solofoodies de contactar influencers por Instagram?",
+    answer: "En Solofoodies todo está estructurado: publicas tu oferta, recibes solicitudes, chateas, gestionas reservas y calificas. Sin DMs desordenados, sin perder tiempo. Además, accedes a una red de creadores ya interesados en colaborar con restaurantes."
+  },
+  {
+    question: "¿Puedo utilizar Solofoodies si soy una agencia de marketing o gestiono varios restaurantes?",
+    answer: "Sí. Si eres una agencia de marketing gastronómico o gestionas varios restaurantes, puedes usar Solofoodies desde un único perfil. Cada restaurante con una marca distinta paga 29 €/mes, y puedes dar de alta o baja los que necesites según tu cartera de clientes.\nPor ejemplo, si gestionas tres marcas diferentes, pagarás 87 €/mes en total, con acceso completo a publicar colaboraciones, recibir solicitudes de creadores gastronómicos, chatear, valorar y ver métricas por restaurante.\nSolofoodies es ideal para grupos de restauración y agencias que buscan centralizar la gestión de sus colaboraciones con influencers de forma profesional y flexible."
   }
 ];
 
