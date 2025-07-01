@@ -4,58 +4,46 @@ import { CheckCircle, Camera, Utensils, Building2 } from 'lucide-react';
 const FeaturesSection = () => {
   const foodieFeatures = [
     {
-      title: "Explora colaboraciones según tu ubicación actual",
-      description: "Encuentra oportunidades cerca de ti"
+      title: "Explora colaboraciones según tu ubicación actual"
     },
     {
-      title: "Añade viajes próximos con ubicación y fechas", 
-      description: "Planifica colaboraciones durante tus viajes"
+      title: "Añade viajes próximos con ubicación y fechas"
     },
     {
-      title: "Aplica a colaboraciones antes de llegar a nuevas ciudades",
-      description: "Asegura tu agenda antes de viajar"
+      title: "Aplica a colaboraciones antes de llegar a nuevas ciudades"
     },
     {
-      title: "Rastrea el estado de tus colaboraciones y chatea con restaurantes",
-      description: "Mantén control total de tus partnerships"
+      title: "Rastrea el estado de tus colaboraciones y chatea con restaurantes"
     }
   ];
 
   const restaurantFeatures = [
     {
-      title: "Crea colaboraciones públicas en menos de 1 minuto",
-      description: "Proceso rápido y sencillo"
+      title: "Crea colaboraciones públicas en menos de 1 minuto"
     },
     {
-      title: "Recibe solicitudes de creadores locales e internacionales",
-      description: "Accede a una amplia red de influencers"
+      title: "Recibe solicitudes de creadores locales e internacionales"
     },
     {
-      title: "Habla directo con creadores y define expectativas desde el chat integrado",
-      description: "Comunicación clara y directa"
+      title: "Habla directo con creadores y define expectativas desde el chat integrado"
     },
     {
-      title: "Valora a los creadores al finalizar la colaboración",
-      description: "Construye una red de confianza"
+      title: "Valora a los creadores al finalizar la colaboración"
     }
   ];
 
   const agencyFeatures = [
     {
-      title: "Gestiona múltiples restaurantes desde un solo perfil",
-      description: "Centraliza todas tus operaciones"
+      title: "Gestiona múltiples restaurantes desde un solo perfil"
     },
     {
-      title: "Maneja restaurantes con múltiples ubicaciones",
-      description: "Escala tus campañas fácilmente"
+      title: "Maneja restaurantes con múltiples ubicaciones"
     },
     {
-      title: "Dashboard centralizado para todas las colaboraciones",
-      description: "Control total desde una sola vista"
+      title: "Dashboard centralizado para todas las colaboraciones"
     },
     {
-      title: "Analíticas consolidadas por cliente",
-      description: "Reportes detallados para cada restaurante"
+      title: "Analíticas consolidadas por cliente"
     }
   ];
 
@@ -80,8 +68,7 @@ const FeaturesSection = () => {
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#FDBD50] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-[#1D252C] mb-1 text-sm">{feature.title}</h4>
-                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                    <h4 className="font-semibold text-[#1D252C] text-sm">{feature.title}</h4>
                   </div>
                 </div>
               ))}
@@ -101,8 +88,7 @@ const FeaturesSection = () => {
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#FF4438] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-[#1D252C] mb-1 text-sm">{feature.title}</h4>
-                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                    <h4 className="font-semibold text-[#1D252C] text-sm">{feature.title}</h4>
                   </div>
                 </div>
               ))}
@@ -122,8 +108,7 @@ const FeaturesSection = () => {
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-[#1D252C] mb-1 text-sm">{feature.title}</h4>
-                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                    <h4 className="font-semibold text-[#1D252C] text-sm">{feature.title}</h4>
                   </div>
                 </div>
               ))}
