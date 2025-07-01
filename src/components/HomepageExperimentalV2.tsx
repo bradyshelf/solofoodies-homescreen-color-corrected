@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, Star, ArrowRight, Camera, TrendingUp, Heart, MessageSquare, Award, Play, Instagram, Zap, Globe, MapPin, CheckCircle2, Sparkles, Eye, Target } from 'lucide-react';
