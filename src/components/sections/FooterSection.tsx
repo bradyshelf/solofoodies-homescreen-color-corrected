@@ -1,13 +1,11 @@
-
 import { Utensils } from 'lucide-react';
-
 interface FooterSectionProps {
   collabCount: number;
 }
-
-const FooterSection = ({ collabCount }: FooterSectionProps) => {
-  return (
-    <footer className="px-4 py-12 border-t border-gray-200 md:px-6 lg:px-8 bg-white">
+const FooterSection = ({
+  collabCount
+}: FooterSectionProps) => {
+  return <footer className="px-4 py-12 border-t border-gray-200 md:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2">
@@ -38,15 +36,7 @@ const FooterSection = ({ collabCount }: FooterSectionProps) => {
             </div>
           </div>
           
-          <div>
-            <h4 className="font-semibold text-[#1D252C] mb-4">Company</h4>
-            <div className="space-y-2">
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">About Us</a>
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Careers</a>
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Press</a>
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Contact</a>
-            </div>
-          </div>
+          
         </div>
         
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between">
@@ -58,8 +48,6 @@ const FooterSection = ({ collabCount }: FooterSectionProps) => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default FooterSection;
