@@ -1,4 +1,3 @@
-
 import { Heart, Utensils, Camera, Globe } from 'lucide-react';
 
 interface StatsSectionProps {
@@ -8,9 +7,9 @@ interface StatsSectionProps {
 const StatsSection = ({ collabCount }: StatsSectionProps) => {
   const stats = [
     { number: collabCount.toLocaleString(), label: "Colaboraciones Exitosas", icon: Heart },
-    { number: "2,500+", label: "Restaurantes Activos", icon: Utensils },
-    { number: "8,900+", label: "Creadores de Contenido", icon: Camera },
-    { number: "150+", label: "Ciudades en Todo el Mundo", icon: Globe }
+    { number: "2,500+", label: "Restaurantes", icon: Utensils },
+    { number: "8,900+", label: "Creadores", icon: Camera },
+    { number: "150+", label: "Ciudades", icon: Globe }
   ];
 
   return (
