@@ -25,9 +25,7 @@ const HomepageEnhanced = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <VersionSwitcher />
-      
+    <div className="min-h-screen bg-white relative">
       {/* Header */}
       <header className="px-4 py-6 md:px-6 lg:px-8 border-b border-gray-100">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -282,6 +280,8 @@ const HomepageEnhanced = () => {
           </div>
         </div>
       </footer>
+      
+      <VersionSwitcher />
     </div>
   );
 };

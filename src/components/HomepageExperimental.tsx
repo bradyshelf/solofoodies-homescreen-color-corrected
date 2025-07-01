@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Plus, Minus } from 'lucide-react';
@@ -29,15 +28,13 @@ const HomepageExperimental = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
-      <VersionSwitcher />
-      
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
       {/* Animated Background */}
       <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-black to-orange-900/20"></div>
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,111,97,0.1),transparent_50%)]"></div>
       
       {/* Header */}
-      <header className="relative z-50 px-6 py-8 border-b border-gray-800 backdrop-blur-md">
+      <header className="relative z-10 px-4 py-6 md:px-6 lg:px-8 border-b border-white/10">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-r from-[#FF6F61] to-[#FDBD50] rounded-full flex items-center justify-center shadow-lg shadow-orange-500/25">
@@ -304,7 +301,7 @@ const HomepageExperimental = () => {
       </section>
 
       {/* Footer - Minimal Dark */}
-      <footer className="px-6 py-16 bg-black border-t border-gray-800">
+      <footer className="relative z-10 px-4 py-12 border-t border-white/10 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6">
@@ -358,11 +355,13 @@ const HomepageExperimental = () => {
             </div>
           </div>
           
-          <div className="pt-8 border-t border-gray-800 text-center">
+          <div className="pt-8 border-t border-white/10 text-center">
             <p className="text-gray-500">© 2024 SoloFoodies. All rights reserved.</p>
           </div>
         </div>
       </footer>
+      
+      <VersionSwitcher />
     </div>
   );
 };
