@@ -20,12 +20,6 @@ const FooterSection = ({ collabCount }: FooterSectionProps) => {
             <p className="text-gray-600 mb-4 max-w-md">
               Connecting restaurants and food creators worldwide through meaningful collaborations.
             </p>
-            <div className="flex items-center gap-4 justify-start md:justify-end">
-              <div className="flex items-center gap-2 text-sm text-gray-600">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span>{collabCount.toLocaleString()} collaborations and counting</span>
-              </div>
-            </div>
           </div>
           
           <div>
