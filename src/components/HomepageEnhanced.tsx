@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe } from 'lucide-react';
+import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import HeroSection from './sections/HeroSection';
 import StatsSection from './sections/StatsSection';
@@ -11,6 +11,7 @@ import { testimonials, howItWorksSteps, trustFeatures, foodieFeatures, restauran
 const HomepageEnhanced = () => {
   const [collabCount, setCollabCount] = useState(1247);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [selectedPlan, setSelectedPlan] = useState('monthly');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -122,6 +123,116 @@ const HomepageEnhanced = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="px-4 py-20 md:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Planes y Precios</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Los creadores empiezan gratis, los restaurantes acceden a todas las funcionalidades con planes mensuales.
+            </p>
+          </div>
+
+          {/* Plan Toggle */}
+          <div className="flex justify-center mb-12">
+            <div className="bg-gray-100 p-1 rounded-lg">
+              <button
+                onClick={() => setSelectedPlan('monthly')}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  selectedPlan === 'monthly'
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Mensual
+              </button>
+              <button
+                onClick={() => setSelectedPlan('onetime')}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  selectedPlan === 'onetime'
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Pago único
+              </button>
+            </div>
+          </div>
+
+          {/* Pricing Card */}
+          <div className="max-w-md mx-auto">
+            <Card className="border-2 border-[#FF6F61] relative overflow-hidden">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#FF6F61] text-white px-4 py-1 rounded-b-lg text-sm font-medium">
+                Más Popular
+              </div>
+              
+              <CardContent className="p-8 pt-12">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Restaurante Individual</h3>
+                  <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
+                  
+                  <div className="mb-4">
+                    <div className="flex items-center justify-center gap-1">
+                      <Euro className="w-8 h-8 text-gray-900" />
+                      <span className="text-5xl font-bold text-gray-900">
+                        {selectedPlan === 'monthly' ? '29' : '232'}
+                      </span>
+                      {selectedPlan === 'monthly' && (
+                        <span className="text-xl text-gray-600">/mes</span>
+                      )}
+                    </div>
+                    
+                    <p className="text-sm text-gray-600 mt-2">
+                      {selectedPlan === 'monthly' 
+                        ? 'Primer restaurante incluido'
+                        : 'Acceso de por vida'
+                      }
+                    </p>
+                    
+                    {selectedPlan === 'monthly' && (
+                      <p className="text-sm text-[#FF6F61] font-medium mt-1">
+                        +€29/mes por cada restaurante adicional
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Colaboraciones públicas ilimitadas</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Filtros avanzados de creadores</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Chat ilimitado</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Analíticas básicas</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Soporte prioritario</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Gestión de múltiples restaurantes</span>
+                  </div>
+                </div>
+
+                <Button className="w-full bg-[#FF6F61] hover:bg-[#FF6F61]/90 text-white font-semibold py-3">
+                  Comenzar Plan
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
