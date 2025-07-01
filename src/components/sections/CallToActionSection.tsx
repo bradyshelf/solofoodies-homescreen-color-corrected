@@ -1,4 +1,5 @@
 
+
 import { Button } from '@/components/ui/button';
 const CallToActionSection = () => {
   return <section className="px-4 py-20 md:px-6 lg:px-8 bg-gradient-to-r from-[#FF4438] to-[#FDBD50]">
@@ -9,7 +10,7 @@ const CallToActionSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button className="bg-white text-[#FF4438] hover:bg-gray-50 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
-            Join as a Foodie
+            QUIERO COLABORAR COMO FOODIE
           </Button>
           <Button variant="outline" className="border-white text-[#FF4438] bg-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
             Partner as a Restaurant
@@ -19,3 +20,4 @@ const CallToActionSection = () => {
     </section>;
 };
 export default CallToActionSection;
+
