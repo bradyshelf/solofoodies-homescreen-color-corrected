@@ -78,10 +78,13 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                   </div>
                   
                   <p className="text-sm text-gray-600 mt-2">
-                    Primer restaurante incluido
+                    {selectedPlan === 'monthly' 
+                      ? 'Primer restaurante incluido'
+                      : 'Primer restaurante incluido'
+                    }
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     {selectedPlan === 'monthly' 
                       ? '+€29/mes por cada restaurante adicional'
                       : '+€232 por cada restaurante adicional'
@@ -116,7 +119,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
             
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Restaurante Individual</h3>
+                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Plan Mensual</h3>
                 <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
                 
                 <div className="mb-4">
@@ -130,7 +133,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                     Primer restaurante incluido
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     +€29/mes por cada restaurante adicional
                   </p>
                 </div>
@@ -146,7 +149,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
-                Comenzar Plan
+                Comenzar Plan Mensual
               </Button>
             </CardContent>
           </Card>
@@ -155,7 +158,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
           <Card className="border-2 border-gray-200 relative overflow-hidden">
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Restaurante Individual</h3>
+                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Pago Único</h3>
                 <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
                 
                 <div className="mb-4">
@@ -168,7 +171,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                     Primer restaurante incluido
                   </p>
                   
-                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                  <p className="text-sm text-green-500 font-medium mt-1">
                     +€232 por cada restaurante adicional
                   </p>
                 </div>
@@ -184,7 +187,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <Button variant="outline" className="w-full border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10 font-semibold py-3">
-                Comenzar Plan
+                Pago Único
               </Button>
             </CardContent>
           </Card>
