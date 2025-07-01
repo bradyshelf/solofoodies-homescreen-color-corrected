@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe, Euro, Building2 } from 'lucide-react';
@@ -105,6 +106,34 @@ const HomepageEnhanced = () => {
 
       <HeroSection collabCount={collabCount} />
       <StatsSection collabCount={collabCount} />
+
+      {/* Mission Section - moved above How It Works */}
+      <section className="px-4 py-20 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Why SoloFoodies Exists</h2>
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">
+              Our mission is to make it effortless for restaurants and creators to work together, 
+              build buzz, and celebrate food culture. We believe in authentic connections that 
+              benefit everyone in the food community.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              {missionValues.map((value, index) => {
+                const IconComponent = iconMap[value.icon as keyof typeof iconMap];
+                return (
+                  <div key={index}>
+                    <div className="w-16 h-16 bg-[#FF6F61]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="w-8 h-8 text-[#FF6F61]" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
+                    <p className="text-gray-600">{value.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* How It Works Section */}
       <section id="how-it-works" className="px-4 py-20 md:px-6 lg:px-8 bg-[#F9F9F9]">
@@ -352,34 +381,6 @@ const HomepageEnhanced = () => {
       </section>
 
       <FAQSection openFaq={openFaq} setOpenFaq={setOpenFaq} />
-
-      {/* Mission Section */}
-      <section className="px-4 py-20 md:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Why SoloFoodies Exists</h2>
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">
-              Our mission is to make it effortless for restaurants and creators to work together, 
-              build buzz, and celebrate food culture. We believe in authentic connections that 
-              benefit everyone in the food community.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              {missionValues.map((value, index) => {
-                const IconComponent = iconMap[value.icon as keyof typeof iconMap];
-                return (
-                  <div key={index}>
-                    <div className="w-16 h-16 bg-[#FF6F61]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="w-8 h-8 text-[#FF6F61]" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
-                    <p className="text-gray-600">{value.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Trust & Safety Section */}
       <section className="px-4 py-20 md:px-6 lg:px-8">
