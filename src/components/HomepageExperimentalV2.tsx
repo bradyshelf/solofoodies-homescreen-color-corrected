@@ -1,11 +1,14 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Utensils, Users, Star, ArrowRight, Camera, TrendingUp, Heart, MessageSquare, Award, Play, Instagram, Zap, Globe, MapPin, CheckCircle2, Sparkles, Eye, Target } from 'lucide-react';
+import { Utensils, Users, Star, ArrowRight, Camera, TrendingUp, Heart, MessageSquare, Award, Play, Instagram, Zap, Globe, MapPin, CheckCircle2, Sparkles, Eye, Target, Search, Clock, Shield, Plus, Minus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import VersionSwitcher from './VersionSwitcher';
+import { testimonials, faqs, howItWorksSteps, foodieFeatures, restaurantFeatures } from '@/data/landingPageData';
 
 const HomepageExperimentalV2 = () => {
   const [activeStory, setActiveStory] = useState(0);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [liveStats, setLiveStats] = useState({
     collaborations: 2847,
     creators: 1205,
@@ -59,18 +62,18 @@ const HomepageExperimentalV2 = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      {/* Immersive Hero with Video-like Experience */}
+      {/* Immersive Hero */}
       <section className="relative h-screen flex items-center justify-center">
         {/* Background Gradient Animation */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-orange-900/20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.3),transparent)] animate-pulse"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,111,97,0.3),transparent)] animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-black to-gray-800/40">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(156,163,175,0.2),transparent)] animate-pulse"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(75,85,99,0.2),transparent)] animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-[#FF6F61] rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute top-40 right-20 w-6 h-6 bg-purple-500 rounded-full animate-bounce" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute bottom-40 left-20 w-3 h-3 bg-yellow-400 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-10 w-4 h-4 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
+        <div className="absolute top-40 right-20 w-6 h-6 bg-gray-500 rounded-full animate-bounce" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute bottom-40 left-20 w-3 h-3 bg-gray-300 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
           {/* Live Stats Bar */}
@@ -83,68 +86,165 @@ const HomepageExperimentalV2 = () => {
                 </div>
                 <div className="w-px h-4 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <Camera className="w-4 h-4 text-purple-400" />
-                  <span className="text-purple-400 font-mono">{liveStats.creators.toLocaleString()} creators</span>
+                  <Camera className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400 font-mono">{liveStats.creators.toLocaleString()} creators</span>
                 </div>
                 <div className="w-px h-4 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <Utensils className="w-4 h-4 text-orange-400" />
-                  <span className="text-orange-400 font-mono">{liveStats.restaurants.toLocaleString()} restaurants</span>
+                  <Utensils className="w-4 h-4 text-gray-500" />
+                  <span className="text-gray-500 font-mono">{liveStats.restaurants.toLocaleString()} restaurants</span>
                 </div>
               </div>
             </div>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none">
-            <span className="bg-gradient-to-r from-[#FF6F61] via-purple-400 to-yellow-400 bg-clip-text text-transparent">
-              FEED
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-white to-gray-300">
+              CONNECT
             </span>
             <br />
-            <span className="text-white">YOUR</span>
+            <span className="text-white">CREATE</span>
             <br />
-            <span className="bg-gradient-to-r from-yellow-400 via-green-400 to-blue-400 bg-clip-text text-transparent">
-              FUTURE
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400">
+              COLLABORATE
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            The next-gen platform where food creators and restaurants collide to create viral moments and lasting partnerships
+            Where restaurants and food creators unite to build authentic partnerships and grow together
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button className="bg-gradient-to-r from-[#FF6F61] to-orange-500 hover:from-[#FF6F61]/90 hover:to-orange-500/90 text-white px-12 py-6 text-xl rounded-2xl shadow-2xl hover:shadow-[#FF6F61]/50 transition-all duration-300 group">
+            <Button className="bg-white hover:bg-gray-100 text-black px-12 py-6 text-xl rounded-2xl shadow-2xl transition-all duration-300 group">
               <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
               Start Creating
             </Button>
-            <Button variant="outline" className="border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 px-12 py-6 text-xl rounded-2xl transition-all duration-300">
-              Explore Now
+            <Button variant="outline" className="border-2 border-gray-600 bg-gray-900/50 backdrop-blur-sm text-white hover:bg-gray-800/50 px-12 py-6 text-xl rounded-2xl transition-all duration-300">
+              Explore Partners
             </Button>
           </div>
+        </div>
+      </section>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+      {/* Role-Based Value Props */}
+      <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Built for Both Sides of the Table
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Whether you're creating content or serving customers, we've got you covered
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Foodie Section */}
+            <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 rounded-3xl p-8 border border-gray-700/50">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 bg-gray-700 rounded-2xl flex items-center justify-center">
+                  <Camera className="w-8 h-8 text-gray-300" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">For Food Creators</h3>
+                  <p className="text-gray-400">Turn your passion into partnerships</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {foodieFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-gray-400 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">{feature.title}</h4>
+                      <p className="text-gray-400 text-sm">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Restaurant Section */}
+            <div className="bg-gradient-to-br from-gray-700/30 to-gray-800/30 rounded-3xl p-8 border border-gray-600/50">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 bg-gray-600 rounded-2xl flex items-center justify-center">
+                  <Utensils className="w-8 h-8 text-gray-200" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">For Restaurants</h3>
+                  <p className="text-gray-400">Amplify your reach authentically</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {restaurantFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-gray-400 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">{feature.title}</h4>
+                      <p className="text-gray-400 text-sm">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vertical Story Section */}
-      <section className="relative py-32 bg-gradient-to-b from-black via-gray-900 to-black">
+      {/* How It Works */}
+      <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                Real Stories.
-              </span>
-              <br />
-              <span className="text-white">Real Results.</span>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Simple. Effective. Scalable.
             </h2>
+            <p className="text-xl text-gray-400">
+              Three steps to transform your food business
+            </p>
           </div>
 
-          {/* Interactive Story Cards */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Users,
+                title: "Create Your Profile",
+                description: "Showcase your unique style or restaurant brand to attract the perfect partnerships"
+              },
+              {
+                icon: Search,
+                title: "Discover Perfect Matches",
+                description: "Find ideal collaborators through our intelligent matching system and curated opportunities"
+              },
+              {
+                icon: TrendingUp,
+                title: "Grow Together",
+                description: "Build lasting relationships that drive real results for both creators and restaurants"
+              }
+            ].map((step, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-700 transition-colors duration-300">
+                  <step.icon className="w-10 h-10 text-gray-300" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
+                <p className="text-gray-400 leading-relaxed max-w-sm mx-auto">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories */}
+      <section className="relative py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Real Stories. Real Results.
+            </h2>
+            <p className="text-xl text-gray-400">
+              See how creators and restaurants are thriving together
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-3 gap-8">
             {successStories.map((story, index) => (
               <div
@@ -157,14 +257,14 @@ const HomepageExperimentalV2 = () => {
                 <Card className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700/50 backdrop-blur-sm overflow-hidden h-96">
                   <div className="relative h-full">
                     <div
-                      className="absolute inset-0 bg-cover bg-center opacity-30"
+                      className="absolute inset-0 bg-cover bg-center opacity-20"
                       style={{backgroundImage: `url(${story.image})`}}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                     
                     <CardContent className="relative h-full p-8 flex flex-col justify-end">
                       <div className="mb-4">
-                        <div className="inline-flex items-center gap-2 bg-green-500/20 px-3 py-1 rounded-full text-green-400 text-sm font-semibold mb-3">
+                        <div className="inline-flex items-center gap-2 bg-gray-700/40 px-3 py-1 rounded-full text-gray-300 text-sm font-semibold mb-3">
                           <TrendingUp className="w-4 h-4" />
                           {story.metric}
                         </div>
@@ -177,7 +277,7 @@ const HomepageExperimentalV2 = () => {
                       </div>
                       
                       {activeStory === index && (
-                        <div className="flex items-center gap-3 text-[#FF6F61] animate-fade-in">
+                        <div className="flex items-center gap-3 text-gray-400 animate-fade-in">
                           <Eye className="w-5 h-5" />
                           <span className="font-semibold">Active Story</span>
                         </div>
@@ -185,26 +285,59 @@ const HomepageExperimentalV2 = () => {
                     </CardContent>
                   </div>
                 </Card>
-
-                {/* Connecting Line */}
-                {index < successStories.length - 1 && (
-                  <div className="hidden lg:block absolute -right-4 top-1/2 w-8 h-px bg-gradient-to-r from-purple-500 to-transparent transform -translate-y-1/2 z-0"></div>
-                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Feature Showcase - Horizontal Scroll */}
-      <section className="py-32 bg-black">
+      {/* Testimonials */}
+      <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Built for the <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Creator Economy</span>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Trusted by Thousands
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Every feature designed to amplify your content and accelerate your growth
+            <p className="text-xl text-gray-400">
+              Hear from our community of creators and restaurant partners
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-gray-800/50 border-gray-700/50 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-gray-400 text-gray-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 mb-4 italic">"{testimonial.quote}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center">
+                      <span className="text-sm font-semibold text-gray-300">{testimonial.avatar}</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">{testimonial.name}</p>
+                      <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Everything You Need to Succeed
+            </h2>
+            <p className="text-xl text-gray-400">
+              Powerful tools designed for the modern creator economy
             </p>
           </div>
 
@@ -214,25 +347,25 @@ const HomepageExperimentalV2 = () => {
                 icon: Target,
                 title: "Smart Matching",
                 description: "AI-powered algorithm connects you with perfect brand partners",
-                color: "from-blue-500 to-cyan-500"
+                color: "from-gray-600 to-gray-700"
               },
               {
                 icon: Zap,
                 title: "Instant Approval",
                 description: "Real-time notifications and lightning-fast collaboration setup",
-                color: "from-yellow-500 to-orange-500"
+                color: "from-gray-700 to-gray-800"
               },
               {
                 icon: Globe,
                 title: "Global Reach",
                 description: "Connect with restaurants and creators worldwide",
-                color: "from-purple-500 to-pink-500"
+                color: "from-gray-600 to-gray-700"
               },
               {
                 icon: Award,
                 title: "Creator Rewards",
                 description: "Earn exclusive perks and unlock premium partnership tiers",
-                color: "from-green-500 to-emerald-500"
+                color: "from-gray-700 to-gray-800"
               }
             ].map((feature, index) => (
               <Card key={index} className="bg-gray-900/50 border-gray-700/50 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-300 group">
@@ -249,49 +382,94 @@ const HomepageExperimentalV2 = () => {
         </div>
       </section>
 
-      {/* Final CTA - Immersive */}
-      <section className="relative py-32 bg-gradient-to-t from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,111,97,0.1),transparent)]"></div>
+      {/* FAQ Section */}
+      <section className="py-24 bg-gray-900">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-400">
+              Everything you need to know about SoloFoodies
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <Card key={index} className="bg-gray-800/50 border-gray-700/50 backdrop-blur-sm">
+                <CardContent className="p-0">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-700/30 transition-colors"
+                  >
+                    <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                    {openFaq === index ? (
+                      <Minus className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    ) : (
+                      <Plus className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-6">
+                      <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="relative py-24 bg-gradient-to-t from-black via-gray-900 to-black">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(156,163,175,0.1),transparent)]"></div>
         
         <div className="relative max-w-4xl mx-auto text-center px-6">
           <div className="mb-8">
-            <Sparkles className="w-12 h-12 text-yellow-400 mx-auto mb-6 animate-pulse" />
+            <Sparkles className="w-12 h-12 text-gray-400 mx-auto mb-6 animate-pulse" />
             <h2 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               <span className="text-white">YOUR</span>
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] via-purple-500 to-yellow-400">
-                MOMENT
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-white to-gray-300">
+                PARTNERSHIP
               </span>
               <br />
-              <span className="text-white">STARTS NOW</span>
+              <span className="text-white">AWAITS</span>
             </h2>
           </div>
 
           <p className="text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Join the creators who are already building their empire through food
+            Join thousands who are already building their future through food
           </p>
 
-          <Button className="bg-gradient-to-r from-[#FF6F61] via-purple-500 to-yellow-400 hover:from-[#FF6F61]/90 hover:via-purple-500/90 hover:to-yellow-400/90 text-white px-16 py-8 text-2xl rounded-3xl shadow-2xl hover:shadow-purple-500/50 transition-all duration-500 group">
-            <span className="group-hover:scale-110 transition-transform duration-300">
-              Launch Your Journey
-            </span>
-            <ArrowRight className="w-8 h-8 ml-4 group-hover:translate-x-2 transition-transform duration-300" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button className="bg-white hover:bg-gray-100 text-black px-16 py-8 text-2xl rounded-3xl shadow-2xl transition-all duration-500 group">
+              <span className="group-hover:scale-110 transition-transform duration-300">
+                Join as Creator
+              </span>
+            </Button>
+            <Button variant="outline" className="border-2 border-gray-600 bg-gray-900/50 backdrop-blur-sm text-white hover:bg-gray-800/50 px-16 py-8 text-2xl rounded-3xl transition-all duration-500 group">
+              <span className="group-hover:scale-110 transition-transform duration-300">
+                Partner as Restaurant
+              </span>
+            </Button>
+          </div>
 
-          <p className="text-gray-500 mt-8">Free forever • No credit card required • Join 50,000+ creators</p>
+          <p className="text-gray-500 mt-8">Free forever • No credit card required • Join 50,000+ users</p>
         </div>
       </section>
 
-      {/* Minimal Footer */}
+      {/* Footer */}
       <footer className="py-12 bg-black border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-[#FF6F61] to-purple-500 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-gray-600 to-gray-700 rounded-full flex items-center justify-center">
               <Utensils className="w-5 h-5 text-white" />
             </div>
             <span className="text-2xl font-bold text-white">SoloFoodies</span>
           </div>
-          <p className="text-gray-500">© 2024 SoloFoodies. Feeding the future of creator partnerships.</p>
+          <p className="text-gray-500">© 2024 SoloFoodies. Connecting creators and restaurants worldwide.</p>
         </div>
       </footer>
       
