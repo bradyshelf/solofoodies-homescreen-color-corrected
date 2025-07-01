@@ -30,7 +30,7 @@ const HomepageExperimental = () => {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* Animated Background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-black to-orange-900/20 animate-pulse"></div>
+      <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-black to-orange-900/20"></div>
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,111,97,0.1),transparent_50%)]"></div>
       
       {/* Header */}
@@ -312,7 +312,7 @@ const HomepageExperimental = () => {
             </div>
             
             <div className="flex items-center justify-center gap-3 text-gray-400 mb-8">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               <span className="text-lg">{collabCount.toLocaleString()} collaborations and counting</span>
             </div>
           </div>
