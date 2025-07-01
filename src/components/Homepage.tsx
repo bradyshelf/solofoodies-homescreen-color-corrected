@@ -280,7 +280,7 @@ const Homepage = () => {
             <Button className="bg-white text-[#FF6F61] hover:bg-gray-50 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
               Join as a Foodie
             </Button>
-            <Button variant="outline" className="border-white hover:bg-white/10 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold text-[#de6666]">
+            <Button variant="outline" className="border-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold text-[#de6666] bg-slate-50">
               Partner as a Restaurant
             </Button>
           </div>
