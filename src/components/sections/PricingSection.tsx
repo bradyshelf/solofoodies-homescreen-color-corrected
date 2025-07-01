@@ -9,9 +9,18 @@ interface PricingSectionProps {
 }
 
 const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) => {
+  const features = [
+    "Colaboraciones públicas ilimitadas",
+    "Filtros avanzados de creadores", 
+    "Chat ilimitado",
+    "Analíticas básicas",
+    "Soporte prioritario",
+    "Gestión de múltiples restaurantes"
+  ];
+
   return (
     <section className="px-4 py-20 md:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">Planes y Precios</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -19,8 +28,8 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
           </p>
         </div>
 
-        {/* Plan Toggle */}
-        <div className="flex justify-center mb-12">
+        {/* Mobile Plan Toggle */}
+        <div className="flex justify-center mb-12 md:hidden">
           <div className="bg-gray-100 p-1 rounded-lg">
             <button
               onClick={() => setSelectedPlan('monthly')}
@@ -45,8 +54,8 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
           </div>
         </div>
 
-        {/* Pricing Card */}
-        <div className="max-w-md mx-auto">
+        {/* Mobile Single Card View */}
+        <div className="md:hidden max-w-md mx-auto">
           <Card className="border-2 border-[#FF4438] relative overflow-hidden">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#FF4438] text-white px-4 py-1 rounded-b-lg text-sm font-medium">
               Más Popular
@@ -84,34 +93,96 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
               </div>
 
               <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Colaboraciones públicas ilimitadas</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Filtros avanzados de creadores</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Chat ilimitado</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Analíticas básicas</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Soporte prioritario</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">Gestión de múltiples restaurantes</span>
-                </div>
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </div>
+                ))}
               </div>
 
               <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
                 Comenzar Plan
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Desktop Two Cards Side by Side */}
+        <div className="hidden md:grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Monthly Plan */}
+          <Card className="border-2 border-[#FF4438] relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#FF4438] text-white px-4 py-1 rounded-b-lg text-sm font-medium">
+              Más Popular
+            </div>
+            
+            <CardContent className="p-8 pt-12">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Plan Mensual</h3>
+                <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
+                
+                <div className="mb-4">
+                  <div className="flex items-center justify-center gap-1">
+                    <Euro className="w-8 h-8 text-[#1D252C]" />
+                    <span className="text-5xl font-bold text-[#1D252C]">29</span>
+                    <span className="text-xl text-gray-600">/mes</span>
+                  </div>
+                  
+                  <p className="text-sm text-gray-600 mt-2">
+                    Primer restaurante incluido
+                  </p>
+                  
+                  <p className="text-sm text-[#FF4438] font-medium mt-1">
+                    +€29/mes por cada restaurante adicional
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
+                Comenzar Plan Mensual
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* One-time Plan */}
+          <Card className="border-2 border-gray-200 relative overflow-hidden">
+            <CardContent className="p-8 pt-12">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Pago Único</h3>
+                <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
+                
+                <div className="mb-4">
+                  <div className="flex items-center justify-center gap-1">
+                    <Euro className="w-8 h-8 text-[#1D252C]" />
+                    <span className="text-5xl font-bold text-[#1D252C]">232</span>
+                  </div>
+                  
+                  <p className="text-sm text-gray-600 mt-2">
+                    Acceso de por vida
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Button variant="outline" className="w-full border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10 font-semibold py-3">
+                Pago Único
               </Button>
             </CardContent>
           </Card>
