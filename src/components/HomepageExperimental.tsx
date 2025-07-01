@@ -79,7 +79,7 @@ const HomepageExperimental = () => {
             <Button className="bg-gradient-to-r from-[#FF6F61] to-[#FDBD50] hover:from-[#FF6F61]/90 hover:to-[#FDBD50]/90 text-white px-10 py-6 text-xl rounded-full shadow-2xl shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 font-bold">
               Join as a Foodie
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black px-10 py-6 text-xl rounded-full font-bold transition-all duration-300">
+            <Button variant="outline" className="border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-black px-10 py-6 text-xl rounded-full font-bold transition-all duration-300">
               Partner as a Restaurant
             </Button>
           </div>
