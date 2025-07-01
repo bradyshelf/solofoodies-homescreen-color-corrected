@@ -1,4 +1,5 @@
 
+
 import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
 interface HeroSectionProps {
@@ -15,8 +16,7 @@ const HeroSection = ({
             <span>{collabCount.toLocaleString()} Colaboraciones exitosas</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-[#1D252C] mb-6 leading-tight">
-            Donde Restaurantes y
-            <span className="text-[#FF4438]"> Foodies se Conectan</span>
+            Creadores de contenido para tu restaurante
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
             Solofoodies te conecta con creadores locales e internacionales listos para colaborar y generar contenido. Comienza seleccionando tu tipo de perfil.
@@ -30,3 +30,4 @@ const HeroSection = ({
     </section>;
 };
 export default HeroSection;
+
