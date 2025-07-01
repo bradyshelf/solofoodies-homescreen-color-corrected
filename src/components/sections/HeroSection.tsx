@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
 
@@ -15,8 +16,7 @@ const HeroSection = ({ collabCount }: HeroSectionProps) => {
             <span>{collabCount.toLocaleString()} colaboraciones exitosas</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-[#1D252C] mb-6 leading-tight">
-            Donde los Restaurantes y
-            <span className="text-[#FF4438]"> Foodies se Conectan</span>
+            Creadores de contenido para tu restaurante
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
             SoloFoodies facilita los acuerdos de marca conectando influencers gastronómicos con restaurantes — todo en una plataforma simple.
