@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Euro } from 'lucide-react';
@@ -11,10 +10,8 @@ interface PricingSectionProps {
 const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) => {
   const features = [
     "Colaboraciones públicas ilimitadas",
-    "Filtros avanzados de creadores", 
     "Chat ilimitado",
     "Analíticas básicas",
-    "Soporte prioritario",
     "Gestión de múltiples restaurantes"
   ];
 
