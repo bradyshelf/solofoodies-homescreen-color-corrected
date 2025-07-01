@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Users, MapPin, Star, ArrowRight, CheckCircle, Search, Camera, TrendingUp, Heart, MessageSquare, Award, Shield, Clock, Zap, Globe } from 'lucide-react';
@@ -69,30 +68,6 @@ const HomepageEnhanced = () => {
                     <p className="text-gray-600 leading-relaxed">{step.description}</p>
                   </CardContent>
                 </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust & Safety Section */}
-      <section className="px-4 py-20 md:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Safe & Secure Platform</h2>
-            <p className="text-xl text-gray-600">Your safety and success are our top priorities</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {trustFeatures.map((feature, index) => {
-              const IconComponent = iconMap[feature.icon as keyof typeof iconMap];
-              return (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-[#FF6F61]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="w-8 h-8 text-[#FF6F61]" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
               );
             })}
           </div>
@@ -209,6 +184,30 @@ const HomepageEnhanced = () => {
         </div>
       </section>
 
+      {/* Trust & Safety Section */}
+      <section className="px-4 py-20 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Safe & Secure Platform</h2>
+            <p className="text-xl text-gray-600">Your safety and success are our top priorities</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {trustFeatures.map((feature, index) => {
+              const IconComponent = iconMap[feature.icon as keyof typeof iconMap];
+              return (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-[#FF6F61]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <IconComponent className="w-8 h-8 text-[#FF6F61]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Footer */}
       <section className="px-4 py-20 md:px-6 lg:px-8 bg-gradient-to-r from-[#FF6F61] to-[#FDBD50]">
         <div className="max-w-4xl mx-auto text-center">
@@ -226,6 +225,8 @@ const HomepageEnhanced = () => {
           </div>
         </div>
       </section>
+
+      <StatsSection collabCount={collabCount} />
 
       {/* Footer */}
       <footer className="px-4 py-12 border-t border-gray-200 md:px-6 lg:px-8 bg-white">
