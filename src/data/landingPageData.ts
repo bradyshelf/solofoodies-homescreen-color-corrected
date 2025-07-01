@@ -1,138 +1,138 @@
 
 export const testimonials = [
   {
-    quote: "SoloFoodies helped us connect with amazing local creators. Our engagement doubled!",
-    name: "Maria Santos",
-    role: "Restaurant Manager",
+    quote: "SoloFoodies nos ayudó a conectar con creadores locales increíbles. ¡Nuestro engagement se duplicó!",
+    name: "María Santos",
+    role: "Gerente de Restaurante",
     avatar: "MS"
   },
   {
-    quote: "Finally, a platform that makes collaboration simple and rewarding for creators.",
+    quote: "Finalmente, una plataforma que hace la colaboración simple y gratificante para los creadores.",
     name: "@foodie_explorer",
-    role: "Food Influencer",
+    role: "Influencer Gastronómico",
     avatar: "FE"
   },
   {
-    quote: "The partnerships we've built through SoloFoodies have been game-changing.",
+    quote: "Las alianzas que hemos construido a través de SoloFoodies han sido revolucionarias.",
     name: "Chef David Kim",
-    role: "Restaurant Owner",
+    role: "Propietario de Restaurante",
     avatar: "DK"
   },
   {
-    quote: "Love how easy it is to find authentic restaurants that value content creators.",
+    quote: "Me encanta lo fácil que es encontrar restaurantes auténticos que valoran a los creadores de contenido.",
     name: "@tastebud_travels",
-    role: "Content Creator",
+    role: "Creador de Contenido",
     avatar: "TT"
   }
 ];
 
 export const faqs = [
   {
-    question: "How does SoloFoodies work?",
-    answer: "SoloFoodies connects restaurants with food influencers through our platform. Restaurants create collaboration opportunities, and foodies can browse and apply for partnerships that match their style and audience."
+    question: "¿Cómo funciona SoloFoodies?",
+    answer: "SoloFoodies conecta restaurantes con influencers gastronómicos a través de nuestra plataforma. Los restaurantes crean oportunidades de colaboración, y los foodies pueden explorar y aplicar para alianzas que coincidan con su estilo y audiencia."
   },
   {
-    question: "Is SoloFoodies free to use?",
-    answer: "For food creators, SoloFoodies is completely free. Restaurants have access to basic features for free, with premium subscription options for enhanced visibility and advanced collaboration tools."
+    question: "¿Es gratis usar SoloFoodies?",
+    answer: "Para los creadores de contenido gastronómico, SoloFoodies es completamente gratuito. Los restaurantes tienen acceso a funciones básicas gratuitas, con opciones de suscripción premium para mayor visibilidad y herramientas avanzadas de colaboración."
   },
   {
-    question: "What types of collaborations are available?",
-    answer: "Collaborations range from complimentary meals for content creation, sponsored posts, event partnerships, menu tastings, grand opening promotions, and long-term brand ambassador roles."
+    question: "¿Qué tipos de colaboraciones están disponibles?",
+    answer: "Las colaboraciones van desde comidas gratuitas para creación de contenido, publicaciones patrocinadas, alianzas para eventos, degustaciones de menú, promociones de gran apertura, y roles de embajador de marca a largo plazo."
   },
   {
-    question: "How do I know if a collaboration is legitimate?",
-    answer: "All restaurants on our platform are verified through our review process. We also provide collaboration agreements and dispute resolution to ensure both parties are protected."
+    question: "¿Cómo sé si una colaboración es legítima?",
+    answer: "Todos los restaurantes en nuestra plataforma son verificados a través de nuestro proceso de revisión. También proporcionamos acuerdos de colaboración y resolución de disputas para asegurar que ambas partes estén protegidas."
   },
   {
-    question: "Can I negotiate collaboration terms?",
-    answer: "Absolutely! Our platform includes messaging tools that allow restaurants and creators to discuss and customize collaboration details to work for both parties."
+    question: "¿Puedo negociar los términos de colaboración?",
+    answer: "¡Por supuesto! Nuestra plataforma incluye herramientas de mensajería que permiten a restaurantes y creadores discutir y personalizar detalles de colaboración para que funcionen para ambas partes."
   },
   {
-    question: "How quickly can I start collaborating?",
-    answer: "Once your profile is complete, you can start browsing and applying for collaborations immediately. Most collaboration requests receive responses within 24-48 hours."
+    question: "¿Qué tan rápido puedo empezar a colaborar?",
+    answer: "Una vez que tu perfil esté completo, puedes comenzar a explorar y aplicar para colaboraciones inmediatamente. La mayoría de las solicitudes de colaboración reciben respuestas dentro de 24-48 horas."
   }
 ];
 
 export const howItWorksSteps = [
   {
     icon: "Search",
-    title: "Build Your Profile",
-    description: "Create a compelling profile that showcases your restaurant or content creation style"
+    title: "Construye Tu Perfil",
+    description: "Crea un perfil atractivo que muestre tu restaurante o estilo de creación de contenido"
   },
   {
     icon: "Heart",
-    title: "Discover Perfect Collabs",
-    description: "Find ideal partners through our smart matching system and browse opportunities"
+    title: "Descubre Colaboraciones Perfectas",
+    description: "Encuentra socios ideales a través de nuestro sistema de emparejamiento inteligente y explora oportunidades"
   },
   {
     icon: "TrendingUp",
-    title: "Reach More Customers",
-    description: "Grow your audience and business through authentic, engaging collaborations"
+    title: "Alcanza Más Clientes",
+    description: "Haz crecer tu audiencia y negocio a través de colaboraciones auténticas y atractivas"
   }
 ];
 
 export const trustFeatures = [
   {
     icon: "Shield",
-    title: "Verified Partners",
-    description: "All restaurants and creators go through our verification process"
+    title: "Socios Verificados",
+    description: "Todos los restaurantes y creadores pasan por nuestro proceso de verificación"
   },
   {
     icon: "Clock",
-    title: "24/7 Support",
-    description: "Our team is here to help you succeed with round-the-clock support"
+    title: "Soporte 24/7",
+    description: "Nuestro equipo está aquí para ayudarte a tener éxito con soporte las 24 horas"
   },
   {
     icon: "Award",
-    title: "Quality Guaranteed",
-    description: "Dispute resolution and satisfaction guarantee for all collaborations"
+    title: "Calidad Garantizada",
+    description: "Resolución de disputas y garantía de satisfacción para todas las colaboraciones"
   }
 ];
 
 export const foodieFeatures = [
   {
-    title: "Discover Hidden Gems",
-    description: "Find unique restaurants looking for authentic content"
+    title: "Descubre Joyas Ocultas",
+    description: "Encuentra restaurantes únicos que buscan contenido auténtico"
   },
   {
-    title: "Monetize Your Content",
-    description: "Get paid for creating engaging food content"
+    title: "Monetiza Tu Contenido",
+    description: "Recibe pago por crear contenido gastronómico atractivo"
   },
   {
-    title: "Build Your Network",
-    description: "Connect with restaurant owners and fellow creators"
+    title: "Construye Tu Red",
+    description: "Conéctate con propietarios de restaurantes y otros creadores"
   }
 ];
 
 export const restaurantFeatures = [
   {
-    title: "Reach New Customers",
-    description: "Tap into influencer audiences to grow your customer base"
+    title: "Alcanza Nuevos Clientes",
+    description: "Aprovecha las audiencias de influencers para hacer crecer tu base de clientes"
   },
   {
-    title: "Authentic Marketing",
-    description: "Get genuine reviews and content from food lovers"
+    title: "Marketing Auténtico",
+    description: "Obtén reseñas genuinas y contenido de amantes de la comida"
   },
   {
-    title: "Easy Management",
-    description: "Simple tools to manage collaborations and track results"
+    title: "Gestión Fácil",
+    description: "Herramientas simples para gestionar colaboraciones y rastrear resultados"
   }
 ];
 
 export const missionValues = [
   {
     icon: "Award",
-    title: "Quality First",
-    description: "Curated partnerships that create real value"
+    title: "Calidad Primero",
+    description: "Alianzas curadas que crean valor real"
   },
   {
     icon: "MessageSquare",
-    title: "Community Driven",
-    description: "Built by and for the food community"
+    title: "Impulsado por la Comunidad",
+    description: "Construido por y para la comunidad gastronómica"
   },
   {
     icon: "Heart",
-    title: "Authentic Connections",
-    description: "Real relationships, not just transactions"
+    title: "Conexiones Auténticas",
+    description: "Relaciones reales, no solo transacciones"
   }
 ];

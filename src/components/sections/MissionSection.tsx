@@ -11,11 +11,11 @@ const MissionSection = () => {
     <section className="px-4 py-20 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-8">Why SoloFoodies Exists</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-8">Por Qué Existe SoloFoodies</h2>
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">
-            Our mission is to make it effortless for restaurants and creators to work together, 
-            build buzz, and celebrate food culture. We believe in authentic connections that 
-            benefit everyone in the food community.
+            Nuestra misión es hacer que sea fácil para restaurantes y creadores trabajar juntos, 
+            generar expectación y celebrar la cultura gastronómica. Creemos en conexiones auténticas que 
+            beneficien a todos en la comunidad gastronómica.
           </p>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {missionValues.map((value, index) => {

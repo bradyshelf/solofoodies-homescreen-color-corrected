@@ -17,19 +17,19 @@ const FooterSection = ({
               <span className="text-xl font-bold text-[#1D252C]">SoloFoodies</span>
             </div>
             <p className="text-gray-600 mb-4 max-w-md">
-              Connecting restaurants and food creators worldwide through meaningful collaborations.
+              Conectando restaurantes y creadores de contenido gastronómico en todo el mundo a través de colaboraciones significativas.
             </p>
           </div>
           
           <div></div>
           
           <div>
-            <h4 className="font-semibold text-[#1D252C] mb-4">Platform</h4>
+            <h4 className="font-semibold text-[#1D252C] mb-4">Plataforma</h4>
             <div className="space-y-2">
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">How It Works</a>
+              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Cómo Funciona</a>
               
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Success Stories</a>
-              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Help Center</a>
+              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Historias de Éxito</a>
+              <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Centro de Ayuda</a>
             </div>
           </div>
           
@@ -37,11 +37,11 @@ const FooterSection = ({
         </div>
         
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-600 mb-4 md:mb-0">© 2024 SoloFoodies. All rights reserved.</p>
+          <p className="text-gray-600 mb-4 md:mb-0">© 2024 SoloFoodies. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Privacy Policy</a>
-            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Terms of Service</a>
-            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Cookie Policy</a>
+            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Política de Privacidad</a>
+            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Términos de Servicio</a>
+            <a href="#" className="text-gray-600 hover:text-[#FF4438] transition-colors text-sm">Política de Cookies</a>
           </div>
         </div>
       </div>

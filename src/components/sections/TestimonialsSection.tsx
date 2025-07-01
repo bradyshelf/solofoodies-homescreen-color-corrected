@@ -7,8 +7,8 @@ const TestimonialsSection = () => {
     <section className="px-4 py-20 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">What Our Community Says</h2>
-          <p className="text-xl text-gray-600">Real stories from restaurants and creators who've found success</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">Lo Que Dice Nuestra Comunidad</h2>
+          <p className="text-xl text-gray-600">Historias reales de restaurantes y creadores que han encontrado el éxito</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (

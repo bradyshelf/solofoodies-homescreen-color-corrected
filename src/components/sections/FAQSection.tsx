@@ -14,10 +14,10 @@ const FAQSection = ({ openFaq, setOpenFaq }: FAQSectionProps) => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about SoloFoodies
+            Todo lo que necesitas saber sobre SoloFoodies
           </p>
         </div>
 

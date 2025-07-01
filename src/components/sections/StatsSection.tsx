@@ -7,10 +7,10 @@ interface StatsSectionProps {
 
 const StatsSection = ({ collabCount }: StatsSectionProps) => {
   const stats = [
-    { number: collabCount.toLocaleString(), label: "Successful Collaborations", icon: Heart },
-    { number: "2,500+", label: "Active Restaurants", icon: Utensils },
-    { number: "8,900+", label: "Food Creators", icon: Camera },
-    { number: "150+", label: "Cities Worldwide", icon: Globe }
+    { number: collabCount.toLocaleString(), label: "Colaboraciones Exitosas", icon: Heart },
+    { number: "2,500+", label: "Restaurantes Activos", icon: Utensils },
+    { number: "8,900+", label: "Creadores de Contenido", icon: Camera },
+    { number: "150+", label: "Ciudades en Todo el Mundo", icon: Globe }
   ];
 
   return (

@@ -40,12 +40,12 @@ const HomepageEnhanced = () => {
           
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#how-it-works" className="text-gray-600 hover:text-[#FF4438] transition-colors">How It Works</a>
-              <a href="#features" className="text-gray-600 hover:text-[#FF4438] transition-colors">Features</a>
-              <a href="#faq" className="text-gray-600 hover:text-[#FF4438] transition-colors">FAQ</a>
+              <a href="#how-it-works" className="text-gray-600 hover:text-[#FF4438] transition-colors">Cómo Funciona</a>
+              <a href="#features" className="text-gray-600 hover:text-[#FF4438] transition-colors">Características</a>
+              <a href="#faq" className="text-gray-600 hover:text-[#FF4438] transition-colors">Preguntas Frecuentes</a>
             </nav>
             <Button variant="outline" className="border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10">
-              Sign In
+              Iniciar Sesión
             </Button>
           </div>
         </div>

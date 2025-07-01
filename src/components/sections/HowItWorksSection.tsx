@@ -12,8 +12,8 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="px-4 py-20 md:px-6 lg:px-8 bg-[#F9F9F9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">How It Works</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Three simple steps to start building meaningful collaborations</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-6">Cómo Funciona</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Tres pasos simples para comenzar a construir colaboraciones significativas</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {howItWorksSteps.map((step, index) => {
