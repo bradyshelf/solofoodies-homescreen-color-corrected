@@ -53,8 +53,8 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
 
         {/* Mobile Single Card View */}
         <div className="md:hidden max-w-md mx-auto">
-          <Card className={`border-2 ${selectedPlan === 'monthly' ? 'border-[#FF4438]' : 'border-green-500'} relative overflow-hidden`}>
-            <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 ${selectedPlan === 'monthly' ? 'bg-[#FF4438]' : 'bg-green-500'} text-white px-4 py-1 rounded-b-lg text-sm font-medium`}>
+          <Card className={`border-2 ${selectedPlan === 'monthly' ? 'border-[#FF4438]' : 'border-[#FDBD50]'} relative overflow-hidden`}>
+            <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 ${selectedPlan === 'monthly' ? 'bg-[#FF4438]' : 'bg-[#FDBD50]'} text-white px-4 py-1 rounded-b-lg text-sm font-medium`}>
               {selectedPlan === 'monthly' ? 'Más Popular' : 'Mejor Valor'}
             </div>
             
@@ -101,7 +101,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                 ))}
               </div>
 
-              <Button className={`w-full ${selectedPlan === 'monthly' ? 'bg-[#FF4438] hover:bg-[#FF4438]/90' : 'bg-green-500 hover:bg-green-600'} text-white font-semibold py-3`}>
+              <Button className={`w-full ${selectedPlan === 'monthly' ? 'bg-[#FF4438] hover:bg-[#FF4438]/90' : 'bg-[#FDBD50] hover:bg-[#FDBD50]/90'} text-white font-semibold py-3`}>
                 Comenzar
               </Button>
             </CardContent>
@@ -154,8 +154,8 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
           </Card>
 
           {/* One-time Plan */}
-          <Card className="border-2 border-green-500 relative overflow-hidden">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-b-lg text-sm font-medium">
+          <Card className="border-2 border-[#FDBD50] relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#FDBD50] text-white px-4 py-1 rounded-b-lg text-sm font-medium">
               Mejor Valor
             </div>
             
@@ -189,7 +189,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                 ))}
               </div>
 
-              <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3">
+              <Button className="w-full bg-[#FDBD50] hover:bg-[#FDBD50]/90 text-white font-semibold py-3">
                 Comenzar
               </Button>
             </CardContent>
