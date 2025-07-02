@@ -14,9 +14,7 @@ const MissionSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1D252C] mb-8">¿Por qué Solofoodies?</h2>
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">Nuestra misión es facilitar al máximo la colaboración entre restaurantes y creadores gastronómicos.
-Queremos ayudarte a generar visibilidad, compartir experiencias auténticas y celebrar la cultura culinaria. Creemos en conexiones reales que benefician al ecosistema gastronómico
-        </p>
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">Nuestra misión es facilitar al máximo las colaboraciones entre restaurantes y creadores gastronómicos. Queremos ayudarte a generar visibilidad, compartir experiencias auténticas y celebrar la cultura culinaria. Creemos en conexiones reales que benefician al ecosistema gastronómico</p>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {missionValues.map((value, index) => {
             const IconComponent = iconMap[value.icon as keyof typeof iconMap];
