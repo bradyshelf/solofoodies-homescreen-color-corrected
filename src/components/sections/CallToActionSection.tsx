@@ -11,7 +11,7 @@ const CallToActionSection = () => {
           <Button className="bg-white text-[#FF4438] hover:bg-white/10 hover:text-white px-4 sm:px-8 py-4 text-sm sm:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold">
             QUIERO COLABORAR COMO FOODIE
           </Button>
-          <Button variant="outline" className="border-white text-[#FF4438] bg-white hover:bg-white/10 hover:text-white px-3 sm:px-8 py-4 text-xs sm:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold whitespace-normal leading-tight">
+          <Button variant="outline" className="border-white text-[#FF4438] bg-white hover:bg-white/10 hover:text-white px-3 md:px-6 lg:px-8 py-4 text-xs md:text-sm lg:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold whitespace-normal leading-tight">
             SOY UN RESTAURANTE, QUIERO RECIBIR CREADORES
           </Button>
         </div>
