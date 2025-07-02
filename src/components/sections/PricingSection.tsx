@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Euro } from 'lucide-react';
@@ -61,7 +60,9 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
             
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Restaurante Individual</h3>
+                <h3 className="text-2xl font-bold text-[#1D252C] mb-2">
+                  {selectedPlan === 'monthly' ? 'Plan Mensual' : 'Pago Único'}
+                </h3>
                 <p className="text-gray-600 mb-6">Para restaurantes independientes, grupos y agencias</p>
                 
                 <div className="mb-4">
