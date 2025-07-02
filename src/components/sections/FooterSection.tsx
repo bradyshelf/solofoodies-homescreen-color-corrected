@@ -8,7 +8,7 @@ const FooterSection = ({
 }: FooterSectionProps) => {
   return <footer className="px-4 py-12 border-t border-gray-200 md:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-[#FF4438] rounded-lg flex items-center justify-center">
@@ -21,9 +21,9 @@ const FooterSection = ({
             </p>
           </div>
           
-          <div></div>
+          <div className="hidden md:block"></div>
           
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="font-semibold text-[#1D252C] mb-4">Plataforma</h4>
             <div className="space-y-2">
               <a href="#" className="block text-gray-600 hover:text-[#FF4438] transition-colors">Cómo Funciona</a>
