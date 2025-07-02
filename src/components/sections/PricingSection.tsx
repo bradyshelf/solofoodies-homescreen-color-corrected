@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Euro } from 'lucide-react';
@@ -53,9 +54,9 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
 
         {/* Mobile Single Card View */}
         <div className="md:hidden max-w-md mx-auto">
-          <Card className="border-2 border-[#FF4438] relative overflow-hidden">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#FF4438] text-white px-4 py-1 rounded-b-lg text-sm font-medium">
-              Más Popular
+          <Card className={`border-2 ${selectedPlan === 'monthly' ? 'border-[#FF4438]' : 'border-green-500'} relative overflow-hidden`}>
+            <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 ${selectedPlan === 'monthly' ? 'bg-[#FF4438]' : 'bg-green-500'} text-white px-4 py-1 rounded-b-lg text-sm font-medium`}>
+              {selectedPlan === 'monthly' ? 'Más Popular' : 'Mejor Valor'}
             </div>
             
             <CardContent className="p-8 pt-12">
@@ -99,7 +100,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                 ))}
               </div>
 
-              <Button className="w-full bg-[#FF4438] hover:bg-[#FF4438]/90 text-white font-semibold py-3">
+              <Button className={`w-full ${selectedPlan === 'monthly' ? 'bg-[#FF4438] hover:bg-[#FF4438]/90' : 'bg-green-500 hover:bg-green-600'} text-white font-semibold py-3`}>
                 Comenzar
               </Button>
             </CardContent>
@@ -152,7 +153,11 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
           </Card>
 
           {/* One-time Plan */}
-          <Card className="border-2 border-gray-200 relative overflow-hidden">
+          <Card className="border-2 border-green-500 relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-b-lg text-sm font-medium">
+              Mejor Valor
+            </div>
+            
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#1D252C] mb-2">Pago Único</h3>
@@ -183,7 +188,7 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                 ))}
               </div>
 
-              <Button variant="outline" className="w-full border-[#FF4438] text-[#FF4438] hover:bg-[#FF4438]/10 font-semibold py-3">
+              <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3">
                 Comenzar
               </Button>
             </CardContent>
