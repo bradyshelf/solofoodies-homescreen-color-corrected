@@ -130,6 +130,15 @@ const PricingSection = ({ selectedPlan, setSelectedPlan }: PricingSectionProps) 
                       {plan.monthlyEquivalent}€/mes facturado anualmente
                     </p>
                   )}
+                  {/* Show per-restaurant pricing for Multi 4 and Multi 9 */}
+                  {(plan.id === 'multi4' || plan.id === 'multi9') && typeof plan.restaurants === 'number' && (
+                    <p className="text-sm text-green-500 font-medium mt-2">
+                      Solo {isAnnual 
+                        ? (plan.annualPrice / 12 / plan.restaurants).toFixed(2)
+                        : (plan.monthlyPrice / plan.restaurants).toFixed(2)
+                      }€ por restaurante/mes
+                    </p>
+                  )}
                 </div>
 
                 <div className="flex items-center justify-center gap-2 text-sm text-gray-700 mb-6">
